@@ -1,6 +1,7 @@
 import java.io.File
 import java.math.BigInteger
 import java.math.BigInteger.ONE
+import java.util.*
 
 class RSAKeyGenerator {
 
@@ -10,11 +11,11 @@ class RSAKeyGenerator {
     }
 
     private fun generateKeyPair(): RSAKeyPair {
-        val q = BigInteger.probablePrime(1024, java.util.Random())
-        val p = BigInteger.probablePrime(1024, java.util.Random())
+        val q = BigInteger.probablePrime(1024, Random())
+        val p = BigInteger.probablePrime(1024, Random())
         val n = q.multiply(p)
         val phiOfN = q.subtract(ONE).multiply(p.subtract(ONE))
-        val e = ONE.modInverse(phiOfN)
+        val e = BigInteger(1024, Random())
         val d = findSuitableD(e, phiOfN)
         return RSAKeyPair(n, e, d)
     }
