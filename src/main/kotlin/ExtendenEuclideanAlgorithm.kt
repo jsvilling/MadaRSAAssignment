@@ -4,7 +4,13 @@ import java.math.BigInteger.ZERO
 
 class ExtendenEuclideanAlgorithm(val a: BigInteger, val b: BigInteger) {
 
-    fun calculate(): Array<BigInteger> {
+    val result by lazy { calculate() }
+    val gcd by lazy { result[1] }
+    val x0 by lazy { result[2] }
+    val y0 by lazy { result[3] }
+    val bezoutCoefficients by lazy { result.copyOfRange(2, 4) }
+
+    private fun calculate(): Array<BigInteger> {
         var s = createInitialRow(a, b)
         while (!isDone(s)) {
             s = calculateNextRow(s)
