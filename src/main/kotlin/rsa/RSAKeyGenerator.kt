@@ -1,11 +1,13 @@
-import dto.RSAKey
+package rsa
+
+import rsa.dto.RSAKey
 import java.math.BigInteger
 import java.math.BigInteger.ONE
 import java.util.*
 
 class RSAKeyGenerator(val fileService: RSAKeyFileService = RSAKeyFileService()) {
 
-    fun createAndPersistKeyPair(){
+    fun generateAndPersistKeyPair(){
         val keyPair = generateKeyPair()
         fileService.persistKeyPair(keyPair)
     }

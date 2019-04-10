@@ -1,4 +1,6 @@
-import dto.RSAKey
+package rsa
+
+import rsa.dto.RSAKey
 import java.io.File
 import java.math.BigInteger
 
