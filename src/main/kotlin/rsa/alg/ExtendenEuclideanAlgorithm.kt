@@ -1,4 +1,4 @@
-package rsa
+package rsa.alg
 
 import java.math.BigInteger
 import java.math.BigInteger.ONE

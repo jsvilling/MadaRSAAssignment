@@ -1,5 +1,6 @@
 package rsa
 
+import rsa.alg.ExtendenEuclideanAlgorithm
 import rsa.dto.RSAKey
 import java.math.BigInteger
 import java.math.BigInteger.ONE
