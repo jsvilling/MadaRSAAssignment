@@ -1,8 +1,5 @@
 package ui
 
-import ui.input.Message
-import ui.input.YesNoType
-
 import java.util.Scanner
 
 class CommandLineInputReader(private val scanner: Scanner = Scanner(System.`in`)) {
@@ -24,9 +21,9 @@ class CommandLineInputReader(private val scanner: Scanner = Scanner(System.`in`)
         return readValidatedInput(request, this::validateNonEmpty)
     }
 
-    fun readYesNo(message: Message): Boolean {
-        val answer = readValidatedInput(message) { a -> YesNoType.valueOf(a.toUpperCase()) }
-        return answer.isYes
+    fun readYesNo(message: String): Boolean {
+        //val answer = readValidatedInput(message) { a -> a) }
+        return true
     }
 
     private fun readInputString(request: String): String {

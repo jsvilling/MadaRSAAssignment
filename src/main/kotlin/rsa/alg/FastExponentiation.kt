@@ -8,16 +8,14 @@ class FastExponentiation(val x: BigInteger, val e: BigInteger, val m: BigInteger
     val result: BigInteger by lazy { generate() }
 
     private fun generate(): BigInteger {
-        var i = e.bitCount() - 1
         var h = ONE
         var k = x
 
-        while (i >= 0) {
-            if(x.testBit(i)) {
+        for (i in 0..e.bitCount()) {
+            if(e.testBit(i)) {
                 h = h.multiply(k).mod(m)
             }
             k = k.modPow(TWO, m)
-            i--
         }
         return h
     }
