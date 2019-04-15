@@ -1,9 +1,9 @@
 package rsa.service
 
-import DEFAULT_DELIMITER
-import PRIVATE_KEY_NAME
-import PUBLIC_KEY_NAME
 import rsa.dto.RSAKey
+import util.StringConstants.DEFAULT_DELIMITER
+import util.StringConstants.PRIVATE_KEY_NAME
+import util.StringConstants.PUBLIC_KEY_NAME
 import java.io.File
 import java.math.BigInteger
 
