@@ -1,10 +1,18 @@
 package ui
 
+import cli.UserAction
+import ui.input.YesNoType
 import java.util.Scanner
 
 class CommandLineInputReader(private val scanner: Scanner = Scanner(System.`in`)) {
-    fun <T> readValidatedInput(message: Any, extractor: (String) -> T): T {
-        return readValidatedInput(message.toString(), extractor)
+
+    fun readYesNo(message: String): Boolean {
+        val answer = readValidatedInput(message) { a -> YesNoType.valueOf(a.toUpperCase()) }
+        return answer.isYes
+    }
+
+    fun readAction(message: String): UserAction {
+        return readValidatedInput(message) { a -> UserAction.valueOf(a.toUpperCase()) }
     }
 
     fun <T> readValidatedInput(request: String, extractor: (String) -> T): T {
@@ -17,24 +25,8 @@ class CommandLineInputReader(private val scanner: Scanner = Scanner(System.`in`)
         }
     }
 
-    fun readNonEmptyString(request: String): String {
-        return readValidatedInput(request, this::validateNonEmpty)
-    }
-
-    fun readYesNo(message: String): Boolean {
-        //val answer = readValidatedInput(message) { a -> a) }
-        return true
-    }
-
     private fun readInputString(request: String): String {
         System.out.println(request)
         return scanner.next()
-    }
-
-    private fun validateNonEmpty(value: String): String {
-        if (value.isEmpty()) {
-            throw RuntimeException()
-        }
-        return value
     }
 }

@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92315484-9c94-4dfd-afcd-09905dd50ab9" name="Default Changelist" comment="">
+    <list default="true" id="92315484-9c94-4dfd-afcd-09905dd50ab9" name="Default Changelist" comment="Use RSAKey class">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/cli/YesNoType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ExtendenEuclideanAlgorithm.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ExtendenEuclideanAlgorithm.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/RSAKeyGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/RSAKeyGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/RSATool.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/RSATool.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInputReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInputReader.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInterface.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInterface.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cli/UserAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cli/UserAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rsa/service/RSACryptoService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rsa/service/RSACryptoService.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -28,10 +37,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/ExtendenEuclideanAlgorithm.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/alg/FastExponentiation.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
+            <state relative-caret-position="120">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#17#74#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/service/RSACryptoService.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="e#21#434#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,31 +63,74 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/RSATool.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/RSAKeyPair.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="78" selection-start-line="2" selection-start-column="78" selection-end-line="2" selection-end-column="78" />
+            <state relative-caret-position="100">
+              <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/RSAKeyGenerator.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInterface.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="721">
+              <caret line="42" column="96" selection-start-line="42" selection-start-column="96" selection-end-line="42" selection-end-column="96" />
               <folding>
-                <element signature="e#0#98#0" expanded="true" />
+                <element signature="e#13#124#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInputReader.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+              <folding>
+                <element signature="e#12#84#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cipher.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/cli/UserAction.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/service/RSAKeyFileService.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+              <folding>
+                <element signature="e#21#90#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -71,14 +138,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Class" />
+        <option value="Kotlin Enum" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>coprime</find>
+      <find>,</find>
+      <find>print</find>
+      <find>toChar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -87,21 +159,43 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/kotlin/RSAKey.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/RSAKeyPair.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/RSAKeyService.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/RSATool.java" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/RSATool.kt" />
-        <option value="$PROJECT_DIR$/pk.txt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/ExtendenEuclideanAlgorithm.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/RSAKey.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/dto/RSAKey.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/dto/RSAKeyPair.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/dto/RSAKeyFileService.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/RSAKeyGenerator.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/RSAKeyFileService.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/rsa/RSAEncryptionService.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/rsa/dto/RSAKey.kt" />
+        <option value="$PROJECT_DIR$/sk.txt" />
+        <option value="$PROJECT_DIR$/pk.txt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/FileNameConstants.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/rsa/RSAKeyFileService.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/rsa/alg/FastExponentiation.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/StringConstants.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/FileUtils.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/rsa/RSACryptoService.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/util/StringConstants.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/rsa/service/RSAKeyFileService.kt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInputReader.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/RSATool.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/rsa/service/RSACryptoService.kt" />
+        <option value="$PROJECT_DIR$/text.txt" />
+        <option value="$PROJECT_DIR$/cipher.txt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/cli/UserAction.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInterface.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="27" />
-    <option name="width" value="3005" />
+    <option name="width" value="1503" />
     <option name="height" value="1701" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -110,8 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,24 +231,51 @@
             </path>
             <path>
               <item name="MadaRSAAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MadaRSAAssignment" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="cli" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MadaRSAAssignment" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/kotlin/cli" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/cli" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="rsa.service" />
+      <recent name="util" />
+      <recent name="rsa.alg" />
+      <recent name="rsa" />
+      <recent name="dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/cli" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -170,7 +289,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.RSATool">
     <configuration name="RSATool" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="MadaRSAAssignment.main" />
       <option name="VM_PARAMETERS" />
@@ -184,9 +303,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="rsa.alg.FastExponentiation$FastEx" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="MadaRSAAssignment.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="rsa.alg.FastExponentiation$FastEx" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.RSATool" />
+        <item itemvalue="Kotlin.rsa.alg.FastExponentiation$FastEx" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +334,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554817875671</updated>
       <workItem from="1554817887448" duration="6925000" />
-      <workItem from="1554825688804" duration="1062000" />
+      <workItem from="1554825688804" duration="4492000" />
+      <workItem from="1554875341438" duration="2162000" />
+      <workItem from="1554910465986" duration="1477000" />
+      <workItem from="1554961900325" duration="1785000" />
+      <workItem from="1555314035067" duration="4682000" />
+      <workItem from="1555323944379" duration="8859000" />
     </task>
     <task id="LOCAL-00001" summary="Draft extenden euclidean algorithm">
       <created>1554819867834</created>
@@ -231,17 +369,80 @@
       <option name="project" value="LOCAL" />
       <updated>1554824247143</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Make property initializtion lazy">
+      <created>1554826770449</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554826770450</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Refactor RSAKeyPair to RSA Key and create RSAFileService">
+      <created>1554875474347</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554875474347</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Make property initializtion lazy">
+      <created>1554875630324</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1554875630324</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Begin impelemtation of RSA encryption">
+      <created>1554876900983</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1554876900983</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Draft FastExponentiation and create alg package">
+      <created>1554911537275</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1554911537276</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fix En/Decryption and refactoring">
+      <created>1555331449477</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1555331449477</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix imports">
+      <created>1555331570528</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1555331570528</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add gitignore">
+      <created>1555331694136</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1555331694137</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fix imports">
+      <created>1555331743126</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1555331743126</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7987000" />
+    <option name="totallyTimeSpent" value="30382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="3005" height="1701" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25177664" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13807106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -249,18 +450,18 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3296845" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3296845" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3296845" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39987123" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32947975" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33161622" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32904056" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33161622" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3303284" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -277,52 +478,248 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Draft extenden euclidean algorithm" />
     <MESSAGE value="Draft implementation for RSA Key generation" />
     <MESSAGE value="Commit Gradle Wrapper" />
     <MESSAGE value="Fix generation of e for RSA Key Pair" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix generation of e for RSA Key Pair" />
+    <MESSAGE value="Refactor RSAKeyPair to RSA Key and create RSAFileService" />
+    <MESSAGE value="Use RSAKey class" />
+    <MESSAGE value="Make property initializtion lazy" />
+    <MESSAGE value="Create CLI and begin impelemtation of RSA encryption" />
+    <MESSAGE value="Draft FastExponentiation and create alg package" />
+    <MESSAGE value="Fix En/Decryption and refactoring" />
+    <MESSAGE value="Add gitignore" />
+    <MESSAGE value="Fix imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix imports" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>x.bit</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>k</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>h</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/RSAKey.kt" />
-    <entry file="jar:///usr/lib/jvm/java-11-openjdk-amd64/src.zip!/java.base/java/math/BigInteger.java">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/RSAKeyService.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dto/RSAKeyPair.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/alg/ExtendenEuclideanAlgorithm.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="882" column="34" selection-start-line="882" selection-start-column="34" selection-end-line="882" selection-end-column="34" />
+        <state relative-caret-position="80">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="e#17#109#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/RSAKeyService.kt" />
-    <entry file="file://$PROJECT_DIR$/pk.txt" />
-    <entry file="file://$PROJECT_DIR$/sk.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ExtendenEuclideanAlgorithm.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/service/RSAKeyGenerationService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-11-openjdk-amd64/src.zip!/java.base/java/security/interfaces/RSAKey.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/dto/RSAKey.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pk.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-11-openjdk-amd64/src.zip!/java.base/java/math/BigInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="804" column="26" selection-start-line="804" selection-start-column="26" selection-end-line="804" selection-end-column="26" />
+          <folding>
+            <element signature="e#27548#27549#0" expanded="true" />
+            <element signature="e#27577#27578#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/b8815e48fb45e94821287365bd9ce8623f459ac7/kotlin-stdlib-1.3.21-sources.jar!/kotlin/Number.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-11-openjdk-amd64/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="2819" column="21" selection-start-line="2819" selection-start-column="21" selection-end-line="2819" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/FileUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/StringConstants.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/service/RSAKeyFileService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <element signature="e#21#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInputReader.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding>
+            <element signature="e#12#84#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/RSATool.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+        <state relative-caret-position="100">
+          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/RSAKeyPair.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/service/RSACryptoService.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="78" selection-start-line="2" selection-start-column="78" selection-end-line="2" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/RSAKeyGenerator.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="621">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
-            <element signature="e#0#98#0" expanded="true" />
+            <element signature="e#21#434#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cipher.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/alg/FastExponentiation.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#17#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/cli/UserAction.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInterface.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="721">
+          <caret line="42" column="96" selection-start-line="42" selection-start-column="96" selection-end-line="42" selection-end-column="96" />
+          <folding>
+            <element signature="e#13#124#0" expanded="true" />
           </folding>
         </state>
       </provider>

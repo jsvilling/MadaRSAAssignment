@@ -34,8 +34,8 @@ class RSACryptoService(val fileService: RSAKeyFileService = RSAKeyFileService())
         clearFileContens(textFile)
 
         cipher.split(DEFAULT_DELIMITER).stream()
-            .map { s -> decryptToChar(s, sk) }
             .filter(String::isNotBlank)
+            .map { s -> decryptToChar(s, sk) }
             .forEach { c -> writeToFile(c, textFile) }
     }
 
@@ -49,5 +49,4 @@ class RSACryptoService(val fileService: RSAKeyFileService = RSAKeyFileService())
         val result = FastExponentiation(x, sk.ed, sk.n).result
         return result.toInt().toChar().toString()
     }
-
 }

@@ -1,5 +1,5 @@
 package cli
 
 enum class UserAction {
-    GENERATE, ENCRYPT, DECRYPT;
+    GENERATE, ENCRYPT, DECRYPT, HELP;
 }

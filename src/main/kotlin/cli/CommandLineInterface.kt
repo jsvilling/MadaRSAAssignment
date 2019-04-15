@@ -1,18 +1,20 @@
 package cli
 
-import rsa.RSAKeyGenerator
+import rsa.service.RSACryptoService
+import rsa.service.RSAKeyGenerationService
 import ui.CommandLineInputReader
 
 class CommandLineInterface(
-    val reader: CommandLineInputReader = CommandLineInputReader(),
-    val generator: RSAKeyGenerator = RSAKeyGenerator()
+    private val reader: CommandLineInputReader = CommandLineInputReader(),
+    private val generator: RSAKeyGenerationService = RSAKeyGenerationService(),
+    private val cryptoService: RSACryptoService = RSACryptoService()
 ) {
 
     private val nextAction: UserAction
-        get() = reader.readValidatedInput("What do you want to do?") { a -> UserAction.valueOf(a.toUpperCase()) }
+        get() = reader.readAction("Choose a command to run. [encrypt | decrypt | generate | help]")
 
     private val isContinue: Boolean
-        get() = reader.readYesNo("Do you want do do another thing?")
+        get() = reader.readYesNo("Do you want to run another command? [y/n]")
 
     fun run() {
         println("Welcome to the MADA RSA Tool")
@@ -21,6 +23,7 @@ class CommandLineInterface(
                 UserAction.GENERATE -> generate()
                 UserAction.ENCRYPT -> encrypt()
                 UserAction.DECRYPT -> decrypt()
+                UserAction.HELP -> help()
             }
         } while (isContinue)
     }
@@ -31,9 +34,19 @@ class CommandLineInterface(
     }
 
     private fun encrypt() {
-
+        cryptoService.encrypt()
+        print("The contents of the file text.txt were encrypted and saved to the file cipher.txt")
     }
 
-    private fun decrypt() {}
+    private fun decrypt() {
+        cryptoService.decrypt()
+        print("The contents of the file cipher.txt were encrypted and saved to the file text.txt")
+    }
+
+    private fun help() {
+        print("encrypt: \tEncrypts the contents of the file text.txt using the RSA key in the file pk.txt")
+        print("decrypt: \tDecrypts the contents of the file cipher.txt using the RSA key in the file sk.txt")
+        print("generate: \tGenerates a RSA key pair which will be saved in the files sk.txt / pk.txt")
+    }
 
 }
