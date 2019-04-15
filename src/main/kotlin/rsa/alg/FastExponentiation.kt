@@ -5,17 +5,17 @@ import java.math.BigInteger.*
 
 class FastExponentiation(val x: BigInteger, val e: BigInteger, val m: BigInteger) {
 
-    val result: BigInteger by lazy { generate() }
+    val result: BigInteger by lazy { calculate() }
 
-    private fun generate(): BigInteger {
-        var h = ONE
-        var k = x
+    private var h = ONE
+    private var k = x
 
-        for (i in 0..e.bitCount()) {
+    private fun calculate(): BigInteger {
+        for (i in 0..e.bitLength()) {
             if(e.testBit(i)) {
                 h = h.multiply(k).mod(m)
             }
-            k = k.modPow(TWO, m)
+            k = k.multiply(k).mod(m)
         }
         return h
     }
