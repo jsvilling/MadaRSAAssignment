@@ -1,7 +1,7 @@
-package rsa.service
+package ch.fhnw.jvi.mada.rsa.service
 
-import rsa.alg.ExtendenEuclideanAlgorithm
-import rsa.dto.RSAKey
+import ch.fhnw.jvi.mada.rsa.alg.ExtendenEuclideanAlgorithm
+import ch.fhnw.jvi.mada.rsa.dto.RSAKey
 import java.math.BigInteger
 import java.math.BigInteger.ONE
 import java.util.*

@@ -1,4 +1,4 @@
-package rsa.dto
+package ch.fhnw.jvi.mada.rsa.dto
 
 import java.math.BigInteger
 

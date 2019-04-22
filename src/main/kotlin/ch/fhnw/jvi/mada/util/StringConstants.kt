@@ -1,4 +1,4 @@
-package util
+package ch.fhnw.jvi.mada.util
 
 object StringConstants {
     const val CIPHER_FILE_NAME: String = "cipher.txt"

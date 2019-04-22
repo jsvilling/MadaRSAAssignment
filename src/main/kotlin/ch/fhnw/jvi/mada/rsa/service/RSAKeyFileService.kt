@@ -1,9 +1,9 @@
-package rsa.service
+package ch.fhnw.jvi.mada.rsa.service
 
-import rsa.dto.RSAKey
-import util.StringConstants.DEFAULT_DELIMITER
-import util.StringConstants.PRIVATE_KEY_NAME
-import util.StringConstants.PUBLIC_KEY_NAME
+import ch.fhnw.jvi.mada.rsa.dto.RSAKey
+import ch.fhnw.jvi.mada.util.StringConstants.DEFAULT_DELIMITER
+import ch.fhnw.jvi.mada.util.StringConstants.PRIVATE_KEY_NAME
+import ch.fhnw.jvi.mada.util.StringConstants.PUBLIC_KEY_NAME
 import java.io.File
 import java.math.BigInteger
 

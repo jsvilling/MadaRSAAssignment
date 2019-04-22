@@ -1,4 +1,4 @@
-package rsa.alg
+package ch.fhnw.jvi.mada.rsa.alg
 
 import java.math.BigInteger
 import java.math.BigInteger.*

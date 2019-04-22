@@ -1,17 +1,17 @@
-package rsa.service
+package ch.fhnw.jvi.mada.rsa.service
 
-import util.FileUtils.clearFileContens
-import util.FileUtils.createFile
-import util.FileUtils.writeToFile
-import rsa.alg.FastExponentiation
-import rsa.dto.RSAKey
+import ch.fhnw.jvi.mada.util.FileUtils.clearFileContens
+import ch.fhnw.jvi.mada.util.FileUtils.createFile
+import ch.fhnw.jvi.mada.util.FileUtils.writeToFile
+import ch.fhnw.jvi.mada.rsa.alg.FastExponentiation
+import ch.fhnw.jvi.mada.rsa.dto.RSAKey
 import java.math.BigInteger
 
-import util.StringConstants.CIPHER_FILE_NAME
-import util.StringConstants.DEFAULT_DELIMITER
-import util.StringConstants.PRIVATE_KEY_NAME
-import util.StringConstants.PUBLIC_KEY_NAME
-import util.StringConstants.TEXT_FILE_NAME
+import ch.fhnw.jvi.mada.util.StringConstants.CIPHER_FILE_NAME
+import ch.fhnw.jvi.mada.util.StringConstants.DEFAULT_DELIMITER
+import ch.fhnw.jvi.mada.util.StringConstants.PRIVATE_KEY_NAME
+import ch.fhnw.jvi.mada.util.StringConstants.PUBLIC_KEY_NAME
+import ch.fhnw.jvi.mada.util.StringConstants.TEXT_FILE_NAME
 
 class RSACryptoService(val fileService: RSAKeyFileService = RSAKeyFileService()) {
 

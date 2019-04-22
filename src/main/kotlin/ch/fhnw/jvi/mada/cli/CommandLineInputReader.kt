@@ -1,6 +1,6 @@
 package ui
 
-import cli.UserAction
+import ch.fhnw.jvi.mada.cli.UserAction
 import ui.input.YesNoType
 import java.util.Scanner
 

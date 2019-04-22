@@ -1,4 +1,4 @@
-package util
+package ch.fhnw.jvi.mada.util
 
 import java.io.File
 import java.math.BigInteger
@@ -12,12 +12,14 @@ object FileUtils {
     }
 
     fun writeToFile(c: BigInteger, file: File) {
-        writeToFile(c.toString(), file)
+        writeToFile(
+            c.toString().plus(StringConstants.DEFAULT_DELIMITER),
+            file
+        )
     }
 
     fun writeToFile(c: String, file: File) {
         file.appendText(c)
-        file.appendText(",")
     }
 
     fun clearFileContens(fileName: File) {
