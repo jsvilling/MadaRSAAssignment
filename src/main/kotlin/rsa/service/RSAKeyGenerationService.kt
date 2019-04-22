@@ -6,7 +6,7 @@ import java.math.BigInteger
 import java.math.BigInteger.ONE
 import java.util.*
 
-class RSAKeyGenerationService(val fileService: RSAKeyFileService = RSAKeyFileService()) {
+class RSAKeyGenerationService(val fileService: RSAKeyFileService = RSAKeyFileService(), val random: Random = Random()) {
 
     fun generateAndPersistKeyPair(){
         val keyPair = generateKeyPair()
@@ -14,11 +14,11 @@ class RSAKeyGenerationService(val fileService: RSAKeyFileService = RSAKeyFileSer
     }
 
     private fun generateKeyPair(): Pair<RSAKey, RSAKey> {
-        val q = BigInteger.probablePrime(1024, Random())
-        val p = BigInteger.probablePrime(1024, Random())
+        val q = BigInteger.probablePrime(1024, random)
+        val p = BigInteger.probablePrime(1024, random)
         val n = q.multiply(p)
         val phiOfN = q.subtract(ONE).multiply(p.subtract(ONE))
-        val e = BigInteger(1024, Random())
+        val e = findCoprime(phiOfN)
         val d = findSuitableD(e, phiOfN)
 
         val privateKey = RSAKey(n, e)
@@ -26,8 +26,17 @@ class RSAKeyGenerationService(val fileService: RSAKeyFileService = RSAKeyFileSer
         return Pair(privateKey, publicKey)
     }
 
+    private fun findCoprime(phiOfN: BigInteger): BigInteger {
+        var e = BigInteger.probablePrime(1023, random)
+        while (!phiOfN.gcd(e).equals(BigInteger.ONE)) {
+            e = BigInteger.probablePrime(1023, random)
+        }
+        return e
+    }
+
     private fun findSuitableD(e: BigInteger, phiOfN: BigInteger): BigInteger {
-        var d = ExtendenEuclideanAlgorithm(e, phiOfN).y0
+        val alg = ExtendenEuclideanAlgorithm(e, phiOfN)
+        var d = alg.x0
         while (d.signum() == -1) {
             d = d.add(phiOfN)
         }
