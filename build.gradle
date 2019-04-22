@@ -1,9 +1,30 @@
-plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.3.21'
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.21"
+    }
 }
 
-group 'ch.fhnw.jvi'
-version '1.0-SNAPSHOT'
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.3.21'
+    id 'application'
+}
+
+configurations {
+    fatJar
+}
+
+application {
+    mainClassName = 'ch.fhnw.jvi.mada.MainKt'
+}
+
+sourceSets {
+    main.kotlin.srcDirs += 'src/main/kotlin'
+    main.java.srcDirs += 'src/main/java'
+}
 
 repositories {
     mavenCentral()
@@ -11,23 +32,23 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    fatJar "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
 
-compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
-}
-compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.8"
-}
+group 'ch.fhnw.jvi'
+version '1.0-SNAPSHOT'
 
-jar {
+task fatJar(type: Jar) {
     manifest {
-        attributes 'Main-Class': 'MainKt'
+        attributes 'Implementation-Title': 'Gradle Jar File Example',
+                'Implementation-Version': version,
+                'Main-Class': 'ch.fhnw.jvi.mada.MainKt'
     }
-
+    baseName = project.name + '-all'
     from {
-        configurations.compile.collect {
+        configurations.fatJar.collect {
             it.isDirectory() ? it : zipTree(it)
         }
     }
+    with jar
 }

@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="MadaRSAAssignment:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="92315484-9c94-4dfd-afcd-09905dd50ab9" name="Default Changelist" comment="Use RSAKey class">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MadaRSAAssignment_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/util/FileUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util/FileUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/main.kt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -39,92 +33,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInterface.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#13#124#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            <state relative-caret-position="740">
+              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text.txt">
+        <entry file="file://$PROJECT_DIR$/build/install/MadaRSAAssignment/jarout/MadaRSAAssignment">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/service/RSAKeyFileService.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-              <folding>
-                <element signature="e#21#225#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/service/RSACryptoService.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/FileUtils.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding>
-                <element signature="e#14#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cipher.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/service/RSAKeyGenerationService.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInputReader.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-              <folding>
-                <element signature="e#12#84#0" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-660" />
           </provider>
         </entry>
       </file>
@@ -147,6 +68,7 @@
       <find>toChar</find>
       <find>DEFAULT_DEL</find>
       <find>,</find>
+      <find>jar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -178,23 +100,23 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/rsa/service/RSACryptoService.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/cli/UserAction.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/RSATool.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInterface.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInputReader.kt" />
-        <option value="$PROJECT_DIR$/sk.txt" />
         <option value="$PROJECT_DIR$/pk.txt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rsa/service/RSAKeyGenerationService.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/util/FileUtils.kt" />
-        <option value="$PROJECT_DIR$/cipher.txt" />
         <option value="$PROJECT_DIR$/text.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/cipher.txt" />
+        <option value="$PROJECT_DIR$/sk.txt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1569" />
+    <option name="x" value="2504" />
     <option name="y" value="27" />
-    <option name="width" value="1503" />
+    <option name="width" value="1483" />
     <option name="height" value="1701" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -214,6 +136,48 @@
             <path>
               <item name="MadaRSAAssignment" type="b2602c69:ProjectViewProjectNode" />
               <item name="MadaRSAAssignment" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MadaRSAAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MadaRSAAssignment" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="install" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MadaRSAAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MadaRSAAssignment" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="install" type="462c0819:PsiDirectoryNode" />
+              <item name="MadaRSAAssignment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MadaRSAAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MadaRSAAssignment" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="install" type="462c0819:PsiDirectoryNode" />
+              <item name="MadaRSAAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MadaRSAAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MadaRSAAssignment" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="install" type="462c0819:PsiDirectoryNode" />
+              <item name="MadaRSAAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="jarout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MadaRSAAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MadaRSAAssignment" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="install" type="462c0819:PsiDirectoryNode" />
+              <item name="MadaRSAAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MadaRSAAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MadaRSAAssignment" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -221,21 +185,6 @@
               <item name="MadaRSAAssignment" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="MadaRSAAssignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MadaRSAAssignment" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MadaRSAAssignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MadaRSAAssignment" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,12 +197,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/kotlin/cli" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/kotlin/META-INF/MANIFEST.MF" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -268,6 +217,7 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin/cli" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/cli" />
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
@@ -284,7 +234,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="Gradle.MadaRSAAssignment [fatJar]">
+    <configuration name="MadaRSAAssignment [fatJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="fatJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="MadaRSAAssignment [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -304,19 +273,6 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="MadaRSAAssignment.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RSATool" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="MadaRSAAssignment.main" />
       <option name="VM_PARAMETERS" />
@@ -325,6 +281,19 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="RSATool" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ch.fhnw.jvi.mada.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="MadaRSAAssignment.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ch.fhnw.jvi.mada.MainKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -345,8 +314,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.MadaRSAAssignment [fatJar]" />
         <item itemvalue="Gradle.MadaRSAAssignment [jar]" />
+        <item itemvalue="Kotlin.ch.fhnw.jvi.mada.MainKt" />
         <item itemvalue="Kotlin.RSATool" />
         <item itemvalue="Kotlin.rsa.alg.FastExponentiation$FastEx" />
       </list>
@@ -369,7 +339,7 @@
       <workItem from="1554961900325" duration="1785000" />
       <workItem from="1555314035067" duration="4682000" />
       <workItem from="1555323944379" duration="14203000" />
-      <workItem from="1555919858627" duration="4687000" />
+      <workItem from="1555919858627" duration="9295000" />
     </task>
     <task id="LOCAL-00001" summary="Draft extenden euclidean algorithm">
       <created>1554819867834</created>
@@ -504,17 +474,31 @@
       <option name="project" value="LOCAL" />
       <updated>1555924248873</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Remove .gradle direcotry from git">
+      <created>1555924571130</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1555924571130</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Update Package structure">
+      <created>1555927038100</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1555927038100</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40413000" />
+    <option name="totallyTimeSpent" value="45021000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1569" y="27" width="3005" height="1701" extended-state="6" />
+    <frame x="1987" y="27" width="3005" height="1701" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1962775" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19086294" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -523,13 +507,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296845" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3296845" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3296845" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39987123" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32904056" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33161622" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33161622" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -643,25 +627,27 @@
     <MESSAGE value="Rename main class" />
     <MESSAGE value="Fix CLI output format" />
     <MESSAGE value="Fix key generation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix key generation" />
+    <MESSAGE value="Remove .gradle direcotry from git" />
+    <MESSAGE value="Update Package structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Package structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/rsa/service/RSACryptoService.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSACryptoService.kt</url>
           <line>47</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/rsa/service/RSACryptoService.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSACryptoService.kt</url>
           <line>49</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/rsa/service/RSAKeyGenerationService.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyGenerationService.kt</url>
           <line>25</line>
           <properties />
           <option name="timeStamp" value="11" />
@@ -703,7 +689,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/dto/RSAKey.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/dto/RSAKey.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
@@ -738,7 +724,7 @@
     <entry file="file://$PROJECT_DIR$/build/classes/kotlin/main/MainKt.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/alg/ExtendenEuclideanAlgorithm.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/alg/ExtendenEuclideanAlgorithm.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
@@ -748,21 +734,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/cli/YesNoType.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/cli/YesNoType.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/alg/FastExponentiation.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/alg/FastExponentiation.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
@@ -772,21 +751,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/main.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/cli/UserAction.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/cli/UserAction.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="12" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInputReader.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/cli/CommandLineInputReader.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
@@ -796,7 +775,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/StringConstants.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/util/StringConstants.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="31" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="31" />
@@ -806,34 +785,24 @@
     <entry file="file://$PROJECT_DIR$/pk.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sk.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/service/RSACryptoService.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSACryptoService.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/service/RSAKeyGenerationService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/FileUtils.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/util/FileUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="e#14#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/rsa/service/RSAKeyFileService.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyFileService.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
@@ -843,23 +812,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/cli/CommandLineInterface.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+          <folding>
+            <element signature="e#13#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cipher.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9256" selection-start-column="9256" selection-end-column="9256" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sk.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1234" selection-start-column="1234" selection-end-column="1234" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/text.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/cli/CommandLineInterface.kt">
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/MadaRSAAssignment_jar.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#13#124#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -870,16 +867,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyGenerationService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/install/MadaRSAAssignment/jarout/MadaRSAAssignment.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/install/MadaRSAAssignment/docs/readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/install/MadaRSAAssignment/jarout/MadaRSAAssignment">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>MadaRSAAssignment:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -926,6 +950,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -945,6 +970,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.30</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
