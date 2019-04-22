@@ -20,13 +20,13 @@ class CommandLineInputReader(private val scanner: Scanner = Scanner(System.`in`)
             val input = readInputString(request)
             return extractor(input)
         } catch (e: Exception) {
-            System.out.println("Invalid Input: ")
+            println("Invalid Input: ")
             return readValidatedInput(request, extractor)
         }
     }
 
     private fun readInputString(request: String): String {
-        System.out.println(request)
+        println(request)
         return scanner.next()
     }
 }
