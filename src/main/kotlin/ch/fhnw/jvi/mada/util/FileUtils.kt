@@ -3,6 +3,9 @@ package ch.fhnw.jvi.mada.util
 import java.io.File
 import java.math.BigInteger
 
+/**
+ * Helper class to interact with files.
+ */
 object FileUtils {
 
     fun createFile(fileName: String): File {

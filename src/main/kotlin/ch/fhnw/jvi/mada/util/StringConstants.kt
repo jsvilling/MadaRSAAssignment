@@ -1,5 +1,8 @@
 package ch.fhnw.jvi.mada.util
 
+/**
+ * String constants used in multiple places in the programm
+ */
 object StringConstants {
     const val CIPHER_FILE_NAME: String = "cipher.txt"
     const val TEXT_FILE_NAME: String = "text.txt"
