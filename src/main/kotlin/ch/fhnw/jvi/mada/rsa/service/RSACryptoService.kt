@@ -32,10 +32,10 @@ import ch.fhnw.jvi.mada.util.StringConstants.TEXT_FILE_NAME
  * of the caller to assure the needed content has been consumed before the service is called again. This fileService
  * only supports UTF-8 encoding.
  */
-class RSACryptoService(val fileService: RSAKeyFileService = RSAKeyFileService()) {
+class RSACryptoService(private val fileService: RSAKeyFileService = RSAKeyFileService()) {
 
-    val textFile = createFile(TEXT_FILE_NAME)
-    val cipherFile = createFile(CIPHER_FILE_NAME)
+    private val textFile = createFile(TEXT_FILE_NAME)
+    private val cipherFile = createFile(CIPHER_FILE_NAME)
 
     /**
      * Encrypts the contents of the file text.txt using the public key information from the file pk.txt
