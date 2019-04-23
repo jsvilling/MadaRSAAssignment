@@ -23,12 +23,7 @@ class RSAKeyFileService {
 
     private fun persistKey(keyFileName: String, key: RSAKey) {
         val file = File(keyFileName)
-        val keyString = generateKeyString(key)
         file.createNewFile()
-        file.writeText(keyString)
-    }
-
-    private fun generateKeyString(key: RSAKey): String {
-        return "".plus(key.n).plus(",").plus(key.ed)
+        file.writeText(key.toString())
     }
 }
