@@ -9,7 +9,6 @@
     <list default="true" id="92315484-9c94-4dfd-afcd-09905dd50ab9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyFileService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyFileService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/util/StringConstants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/util/StringConstants.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -51,14 +50,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyFileService.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="81" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
+            <state relative-caret-position="540">
+              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
               <folding>
                 <element signature="e#38#310#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/util/FileUtils.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -76,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/text.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -111,7 +119,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/util/StringConstants.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -182,8 +190,8 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/dto/RSAKey.kt" />
         <option value="$PROJECT_DIR$/sk.txt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyFileService.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/util/StringConstants.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyFileService.kt" />
       </list>
     </option>
   </component>
@@ -594,17 +602,24 @@
       <option name="project" value="LOCAL" />
       <updated>1556001247405</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Strip brackets from keystring when reading in keyfile">
+      <created>1556002037633</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1556002037633</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46239000" />
+    <option name="totallyTimeSpent" value="46464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="3005" height="1701" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19221658" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19221658" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -614,7 +629,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296845" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3296845" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39987123" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39987123" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -738,7 +753,8 @@
     <MESSAGE value="Remove superfluous java source directory" />
     <MESSAGE value="Format build.gradle" />
     <MESSAGE value="Override to String in RSAKey and use it when writing key to file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Override to String in RSAKey and use it when writing key to file" />
+    <MESSAGE value="Strip brackets from keystring when reading in keyfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strip brackets from keystring when reading in keyfile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -763,7 +779,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyFileService.kt</url>
-          <line>21</line>
+          <line>17</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
@@ -869,16 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/util/FileUtils.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#14#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/cli/CommandLineInterface.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -951,7 +957,7 @@
     <entry file="file://$PROJECT_DIR$/text.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
@@ -962,6 +968,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/util/StringConstants.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/224a3bcfa1c088dd5d7c4a3958a68427b44c65dc/kotlin-stdlib-common-1.3.21-sources.jar!/kotlin/text/Strings.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -969,20 +982,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyFileService.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/util/FileUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="81" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
-          <folding>
-            <element signature="e#38#310#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/util/StringConstants.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyFileService.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        <state relative-caret-position="540">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+          <folding>
+            <element signature="e#38#310#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
