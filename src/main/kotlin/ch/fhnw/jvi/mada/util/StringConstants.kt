@@ -7,5 +7,5 @@ object StringConstants {
     const val PRIVATE_KEY_NAME: String = "sk.txt"
     const val DEFAULT_DELIMITER = ","
     const val RSA_KEY_START_TOKEN = "("
-    const val RSA_KEY_END_TOKEN = "("
+    const val RSA_KEY_END_TOKEN = ")"
 }
