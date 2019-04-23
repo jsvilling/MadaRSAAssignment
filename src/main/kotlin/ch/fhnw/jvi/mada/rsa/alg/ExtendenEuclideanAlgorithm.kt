@@ -44,7 +44,7 @@ class ExtendenEuclideanAlgorithm(val a: BigInteger, val b: BigInteger) {
      * Checks whether the calculation is done. Calculation is done if b' is 0 r will be 0 in the next iteration.
      */
     private fun isDone(row: Array<BigInteger>): Boolean {
-        return row[1].equals(ZERO) || row[7].equals(ZERO)
+        return row[1] == ZERO || row[7] == ZERO
     }
 
     /**
