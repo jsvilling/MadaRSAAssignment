@@ -9,6 +9,8 @@ import java.util.Scanner
  *
  * The scanner to be used can be passed as a constructor argument. If no scanner is provided a default instance will be
  * used. The default instance is created as a new Scanner reading from System.in
+ *
+ * Output and user feedback is given over the System.out channel.
  */
 class CommandLineInputReader(private val scanner: Scanner = Scanner(System.`in`)) {
 
