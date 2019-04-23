@@ -17,7 +17,11 @@ import java.util.*
  *
  * If the files are not present they will be created
  */
-class RSAKeyGenerationService(val fileService: RSAKeyFileService = RSAKeyFileService(), val random: Random = Random()) {
+class RSAKeyGenerationService(
+    private val fileService: RSAKeyFileService = RSAKeyFileService(),
+    private val random: Random = Random(),
+    private val primeBitLength: Int = 2048
+) {
 
     /**
      * Generates and persists a valid RSAKey pair. The keys are persisted to the following files in the working
@@ -28,7 +32,7 @@ class RSAKeyGenerationService(val fileService: RSAKeyFileService = RSAKeyFileSer
      *  <li>pk.txt - Texfile containing the public key information</li>
      * </ul>
      */
-    fun generateAndPersistKeyPair(){
+    fun generateAndPersistKeyPair() {
         val keyPair = generateKeyPair()
         fileService.persistKeyPair(keyPair)
     }
@@ -39,15 +43,15 @@ class RSAKeyGenerationService(val fileService: RSAKeyFileService = RSAKeyFileSer
      * @return A Pair consisting of the two RSAKeys. The first key is the private key. The second key is the public key.
      */
     private fun generateKeyPair(): Pair<RSAKey, RSAKey> {
-        val q = BigInteger.probablePrime(1024, random)     // Choose random prime q
-        val p = findDistinctPrime(q)                                // Choose second, distinct random prime q
-        val n = q.multiply(p)                                       // Calculate n = p * q
-        val phiOfN = q.subtract(ONE).multiply(p.subtract(ONE))      // Calculate phiOfN = (p-1)*(q-1)
-        val e = findCoprime(phiOfN)                                 // Coose random e coprime to phiOfN
-        val d = findSuitableD(e, phiOfN)                            // Calculate matching d
+        val q = BigInteger.probablePrime(primeBitLength, random)            // Choose random prime q
+        val p = findDistinctPrime(q)                                        // Choose second, distinct random prime q
+        val n = q.multiply(p)                                               // Calculate n = p * q
+        val phiOfN = q.subtract(ONE).multiply(p.subtract(ONE))              // Calculate phiOfN = (p-1)*(q-1)
+        val e = findCoprime(phiOfN)                                         // Coose random e coprime to phiOfN
+        val d = findSuitableD(e, phiOfN)                                    // Calculate matching d
 
-        val privateKey = RSAKey(n, e)                               // Create private key with n and e
-        val publicKey = RSAKey(n, d)                                // Create public key with n and d
+        val privateKey = RSAKey(n, e)                                       // Create private key with n and e
+        val publicKey = RSAKey(n, d)                                        // Create public key with n and d
         return Pair(privateKey, publicKey)
     }
 
@@ -57,11 +61,11 @@ class RSAKeyGenerationService(val fileService: RSAKeyFileService = RSAKeyFileSer
      * been created.
      */
     private fun findDistinctPrime(firstPrime: BigInteger): BigInteger {
-        var newPrime = BigInteger.probablePrime(1024, random)
+        var newPrime = BigInteger.probablePrime(primeBitLength, random)
         while (newPrime.equals(firstPrime)) {
-            newPrime = BigInteger.probablePrime(1024, random)
+            newPrime = BigInteger.probablePrime(primeBitLength, random)
         }
-        return newPrime;
+        return newPrime
     }
 
     /**
@@ -70,9 +74,9 @@ class RSAKeyGenerationService(val fileService: RSAKeyFileService = RSAKeyFileSer
      * is found.
      */
     private fun findCoprime(phiOfN: BigInteger): BigInteger {
-        var e = BigInteger.probablePrime(1023, random)
+        var e = BigInteger.probablePrime(primeBitLength, random)
         while (!phiOfN.gcd(e).equals(BigInteger.ONE)) {
-            e = BigInteger.probablePrime(1023, random)
+            e = BigInteger.probablePrime(primeBitLength, random)
         }
         return e
     }
