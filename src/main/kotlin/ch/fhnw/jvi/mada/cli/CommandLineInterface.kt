@@ -4,6 +4,18 @@ import ch.fhnw.jvi.mada.rsa.service.RSACryptoService
 import ch.fhnw.jvi.mada.rsa.service.RSAKeyGenerationService
 import ui.CommandLineInputReader
 
+/**
+ * CLI class for the MadaRSAAssignment.
+ *
+ * This class provides a small command line user interface to use the MadRSAAssignment tool. The class reads and
+ * validates user input and calls the corresponding service classes.
+ *
+ * All corresponding service classes can be passed as constructor parameter and have a default implementation specified.
+ *
+ * @param reader        - Service to read and validate user input
+ * @param generator     - Service to generate RSAKey pairs
+ * @param cryptoService - Service to encrypt and decrypt a payload
+ */
 class CommandLineInterface(
     private val reader: CommandLineInputReader = CommandLineInputReader(),
     private val generator: RSAKeyGenerationService = RSAKeyGenerationService(),

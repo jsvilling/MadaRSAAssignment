@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="92315484-9c94-4dfd-afcd-09905dd50ab9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyGenerationService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyGenerationService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/cli/CommandLineInterface.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/cli/CommandLineInterface.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -86,11 +86,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyGenerationService.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="92" column="85" selection-start-line="92" selection-start-column="85" selection-end-line="92" selection-end-column="85" />
+            <state relative-caret-position="1532">
+              <caret line="92" column="84" selection-start-line="92" selection-start-column="84" selection-end-line="92" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/cli/CommandLineInputReader.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1040">
+              <caret line="54" column="77" selection-start-line="54" selection-start-column="77" selection-end-line="54" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/cli/CommandLineInterface.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="12" column="119" selection-start-line="12" selection-start-column="119" selection-end-line="12" selection-end-column="119" />
             </state>
           </provider>
         </entry>
@@ -163,6 +181,8 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/dto/RSAKey.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSACryptoService.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyGenerationService.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/cli/CommandLineInputReader.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/cli/CommandLineInterface.kt" />
       </list>
     </option>
   </component>
@@ -219,7 +239,7 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="mada" type="462c0819:PsiDirectoryNode" />
-              <item name="rsa" type="462c0819:PsiDirectoryNode" />
+              <item name="cli" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MadaRSAAssignment" type="b2602c69:ProjectViewProjectNode" />
@@ -229,7 +249,6 @@
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="mada" type="462c0819:PsiDirectoryNode" />
               <item name="rsa" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MadaRSAAssignment" type="b2602c69:ProjectViewProjectNode" />
@@ -612,11 +631,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556005307973</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Add javadoc to RsaKeyGenerationService">
+      <created>1556006404583</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1556006404583</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add javadoc to CommandLineInputReader">
+      <created>1556006792043</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1556006792043</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50623000" />
+    <option name="totallyTimeSpent" value="51180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="3005" height="1701" extended-state="6" />
@@ -734,8 +767,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix generation of e for RSA Key Pair" />
-    <MESSAGE value="Refactor RSAKeyPair to RSA Key and create RSAFileService" />
     <MESSAGE value="Make property initializtion lazy" />
     <MESSAGE value="Create CLI and begin impelemtation of RSA encryption" />
     <MESSAGE value="Draft FastExponentiation and create alg package" />
@@ -759,7 +790,9 @@
     <MESSAGE value="Add javadoc for fast exponentiation algorithm" />
     <MESSAGE value="Add javadoc for RSAKey class" />
     <MESSAGE value="Add javadoc to RSACryptoService" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add javadoc to RSACryptoService" />
+    <MESSAGE value="Add javadoc to RsaKeyGenerationService" />
+    <MESSAGE value="Add javadoc to CommandLineInputReader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add javadoc to CommandLineInputReader" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -820,28 +853,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/cli/CommandLineInputReader.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-          <folding>
-            <element signature="e#12#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pk.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/cli/CommandLineInterface.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <element signature="e#13#124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cipher.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -972,8 +985,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/rsa/service/RSAKeyGenerationService.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="92" column="85" selection-start-line="92" selection-start-column="85" selection-end-line="92" selection-end-column="85" />
+        <state relative-caret-position="1532">
+          <caret line="92" column="84" selection-start-line="92" selection-start-column="84" selection-end-line="92" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/cli/CommandLineInputReader.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="54" column="77" selection-start-line="54" selection-start-column="77" selection-end-line="54" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/ch/fhnw/jvi/mada/cli/CommandLineInterface.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" column="119" selection-start-line="12" selection-start-column="119" selection-end-line="12" selection-end-column="119" />
         </state>
       </provider>
     </entry>
