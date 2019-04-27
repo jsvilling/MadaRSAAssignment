@@ -1,7 +1,7 @@
 package ch.fhnw.jvi.mada.cli
 
-import ch.fhnw.jvi.mada.rsa.service.RSACryptoService
-import ch.fhnw.jvi.mada.rsa.service.RSAKeyGenerationService
+import ch.fhnw.jvi.mada.crypto.rsa.service.RSACryptoService
+import ch.fhnw.jvi.mada.crypto.rsa.service.RSAKeyGenerationService
 import ui.CommandLineInputReader
 
 /**

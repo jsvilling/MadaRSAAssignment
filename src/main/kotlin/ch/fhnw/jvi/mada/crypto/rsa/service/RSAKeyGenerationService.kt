@@ -1,7 +1,8 @@
-package ch.fhnw.jvi.mada.rsa.service
+package ch.fhnw.jvi.mada.crypto.rsa.service
 
-import ch.fhnw.jvi.mada.rsa.alg.ExtendenEuclideanAlgorithm
-import ch.fhnw.jvi.mada.rsa.dto.RSAKey
+import ch.fhnw.jvi.mada.crypto.rsa.alg.ExtendenEuclideanAlgorithm
+import ch.fhnw.jvi.mada.crypto.rsa.dto.RSAKey
+import ch.fhnw.jvi.mada.crypto.shared.KeyGenerationService
 import java.math.BigInteger
 import java.math.BigInteger.ONE
 import java.util.*
@@ -21,7 +22,7 @@ class RSAKeyGenerationService(
     private val fileService: RSAKeyFileService = RSAKeyFileService(),
     private val random: Random = Random(),
     private val primeBitLength: Int = 2048
-) {
+) : KeyGenerationService {
 
     /**
      * Generates and persists a valid RSAKey pair. The keys are persisted to the following files in the working
@@ -32,7 +33,7 @@ class RSAKeyGenerationService(
      *  <li>pk.txt - Texfile containing the public key information</li>
      * </ul>
      */
-    fun generateAndPersistKeyPair() {
+    override fun generateAndPersistKeyPair() {
         val keyPair = generateKeyPair()
         fileService.persistKeyPair(keyPair)
     }

@@ -1,6 +1,7 @@
-package ch.fhnw.jvi.mada.rsa.service
+package ch.fhnw.jvi.mada.crypto.rsa.service
 
-import ch.fhnw.jvi.mada.rsa.dto.RSAKey
+import ch.fhnw.jvi.mada.crypto.rsa.dto.RSAKey
+import ch.fhnw.jvi.mada.crypto.shared.KeyFileService
 import ch.fhnw.jvi.mada.util.FileUtils
 import ch.fhnw.jvi.mada.util.StringConstants.DEFAULT_DELIMITER
 import ch.fhnw.jvi.mada.util.StringConstants.PRIVATE_KEY_NAME
@@ -10,16 +11,16 @@ import ch.fhnw.jvi.mada.util.StringConstants.RSA_KEY_START_TOKEN
 import java.io.File
 import java.math.BigInteger
 
-class RSAKeyFileService {
+class RSAKeyFileService : KeyFileService<RSAKey> {
 
-    fun readKeyFromFile(keyFileName: String): RSAKey {
+    override fun readKeyFromFile(keyFileName: String): RSAKey {
         val file = File(keyFileName)
         val keyString = file.readText().removeSurrounding(RSA_KEY_START_TOKEN, RSA_KEY_END_TOKEN)
         val keyValues = keyString.split(DEFAULT_DELIMITER)
         return RSAKey(BigInteger(keyValues[0]), BigInteger(keyValues[1]))
     }
 
-    fun persistKeyPair(keyPair: Pair<RSAKey, RSAKey>) {
+    override fun persistKeyPair(keyPair: Pair<RSAKey, RSAKey>) {
         persistKey(PUBLIC_KEY_NAME, keyPair.first)
         persistKey(PRIVATE_KEY_NAME, keyPair.second)
     }

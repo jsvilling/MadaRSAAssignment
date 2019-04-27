@@ -1,4 +1,4 @@
-package ch.fhnw.jvi.mada.rsa.dto
+package ch.fhnw.jvi.mada.crypto.rsa.dto
 
 import ch.fhnw.jvi.mada.util.StringConstants
 import java.math.BigInteger
